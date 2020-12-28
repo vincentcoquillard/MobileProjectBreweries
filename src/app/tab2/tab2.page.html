@@ -1,17 +1,31 @@
-<ion-header [translucent]="true">
+<ion-header collapse="condense">
   <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
+    <ion-title size="large">Login</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  
+  <div id="login" style="display: none">
+    <form (ngSubmit)="LoginMethod()">
+      <ion-item>
+        <ion-label>Username</ion-label>
+        <ion-input type="text" [(ngModel)]="Username" name="Username"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Password</ion-label>
+        <ion-input type="password" [(ngModel)]="Password" name="Password"></ion-input>
+      </ion-item>
+      <h3 id="error" style="display: none;">Please enter valid credentials</h3>
+      <h3 id="sameusernameerror" style="display: none;">Username already taken</h3>
+      <button ion-button type="submit" block>Login</button>
+    </form>
+    <button ion-button (click)="RegistrationMethod()" block>Create an account</button>
+  </div>
+  
+  <div id="alreadylogged" style="display: none">
+    <h1>You are already connected.</h1>
+    <ion-button (click)="Disconnect()">Disconnect</ion-button>
+  </div>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
 </ion-content>

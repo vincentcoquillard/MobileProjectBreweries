@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="closeModal()">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>BreweryInfo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngIf="Brewery.length > 0">
+    <ion-card-header>
+      <ion-card-subtitle>{{Brewery[0].type}}</ion-card-subtitle>
+      <ion-card-title>{{Brewery[0].name}}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      {{Brewery[0].street}}<br>
+      {{Brewery[0].city}}<br>
+      {{Brewery[0].state}}<br>
+      {{Brewery[0].country}}<br>
+      {{Brewery[0].phone}}<br>
+      {{Brewery[0].website}}<br>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,15 @@
+.notConnected{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    backdrop-filter: blur(0.4rem);
+    overflow: hidden;
+}
+
+.notConnected h1{
+    position: absolute;
+    top: 8rem;
+    text-align: center;
+    color: red;
+}
