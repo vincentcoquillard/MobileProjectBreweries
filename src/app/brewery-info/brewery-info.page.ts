@@ -28,20 +28,19 @@ export class BreweryInfoPage implements OnInit {
   Website: String;
 
   async closeModal() {
-    await this.modalController.dismiss();
+    await this.modalController.dismiss(); //Close the page
   }
 
-  url = 'https://api.openbrewerydb.org/breweries/';
+  url = 'https://api.openbrewerydb.org/breweries/'; //API URL corresponding to brewery informations
 
   getAPIdata(URL: string) {
-    return this.http.get(URL);
+    return this.http.get(URL); //Get API data with URL
   }
 
   ngOnInit() {
     var brewery = this.Brewery;
-    console.log(this.BreweryID);
     this.getAPIdata(this.url+this.BreweryID.toString())
-    .subscribe((data) => {
+    .subscribe((data) => { //Push data into brewery variable
       brewery.push({
       name: data['name'], 
       type: data['brewery_type'],
@@ -54,15 +53,5 @@ export class BreweryInfoPage implements OnInit {
       website: data['website_url']
     });
   });
-  /* console.log(this.Brewery);
-  this.Name = this.Brewery[0].name;
-  this.Street = this.Brewery[0].street;
-  this.Type = this.Brewery[0].type;
-  this.City = this.Brewery[0].city;
-  this.State = this.Brewery[0].state;
-  this.PostalCode = this.Brewery[0].postal_code;
-  this.Country = this.Brewery[0].country;
-  this.Phone = this.Brewery[0].phone;
-  this.Website = this.Brewery[0].website_url; */
   }
 }
