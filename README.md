@@ -28,6 +28,6 @@ First you have to install Ionic if not already installed: https://ionicframework
 
 Then just go in app project directory, and run 'ionic serve'  
 It will open a web page with the app running. Open the developper console and select the mobile view.  
-[alt text](https://github.com/vincentcoquillard/MobileProjectBreweries/blob/master/Screenshots/Capture%20d%E2%80%99e%CC%81cran%202020-12-30%20a%CC%80%2010.00.43.png)  
+[right here](https://github.com/vincentcoquillard/MobileProjectBreweries/blob/master/Screenshots/Capture%20d%E2%80%99e%CC%81cran%202020-12-30%20a%CC%80%2010.00.43.png)  
 
 You can now enjoy the app !  
