@@ -9,7 +9,7 @@ Following a MVVM Model and a Clean Architecture.
 There are 3 pages (2 tabs and one modal page).  
 
 First, it is the home page which has twot states:  
--when user is connected => list of best breweries in United States  
+-when user is connected => list of best breweries in United States provided by an API: https://www.openbrewerydb.org/
 ![alt text](https://github.com/vincentcoquillard/MobileProjectBreweries/blob/master/Screenshots/Capture%20d%E2%80%99e%CC%81cran%202020-12-30%20a%CC%80%2009.35.34.png)  
 
 -when user in not connected => You have to connect using page 2  
@@ -31,3 +31,5 @@ It will open a web page with the app running. Open the developper console and se
 [right here](https://github.com/vincentcoquillard/MobileProjectBreweries/blob/master/Screenshots/Capture%20d%E2%80%99e%CC%81cran%202020-12-30%20a%CC%80%2010.00.43.png)  
 
 You can now enjoy the app !  
+
+Also, there is an apk debug apk file: [click here to access it](https://github.com/vincentcoquillard/MobileProjectBreweries/blob/master/app-debug.apk)
