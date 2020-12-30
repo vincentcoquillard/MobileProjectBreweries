@@ -13,3 +13,23 @@
     text-align: center;
     color: red;
 }
+
+.toolbar{
+    --background: #ff9f1c;
+    height: 3.5rem;
+}
+
+.beericon{
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.beericon2{
+    position: absolute;
+    font-size: 2rem; 
+    right: 2rem;
+}
+
+.list{
+    height: 100%;
+}

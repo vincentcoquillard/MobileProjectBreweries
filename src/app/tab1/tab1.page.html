@@ -1,8 +1,8 @@
 <ion-header collapse="condense">
-  <ion-toolbar style="--background: #ff9f1c; height: 3.5rem;">
-    <ion-icon color=dark name="beer-outline" style="font-size: 2rem; padding-left: 2rem;"></ion-icon>
+  <ion-toolbar class="toolbar">
+    <ion-icon color=dark name="beer-outline" class="beericon"></ion-icon>
     <ion-title style="font-size: 1.8rem;">Breweries DB</ion-title>
-    <ion-icon color=dark name="beer-outline" style="position: absolute; font-size: 2rem; right: 2rem;"></ion-icon>
+    <ion-icon color=dark name="beer-outline" class="beericon2"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
@@ -12,7 +12,7 @@
     <h1>Sorry, but you must be connected to see this section.</h1>
   </div>
 
-  <ion-list id="listID" style="height: 100%;">
+  <ion-list id="listID" class="list">
     <ion-item *ngFor="let brewery of Breweries" (click)="openBreweryInfos(brewery.id)">
       <ion-text>{{brewery.name}}</ion-text>
     </ion-item>

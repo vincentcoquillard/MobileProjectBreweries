@@ -1,0 +1,31 @@
+.mainTitle, .Already, .disconnectbut{
+    text-align: center;
+}
+
+.Already{
+    margin-top: 5rem;
+}
+
+.disconnectbut{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+    width: 8rem;
+    display: block;
+}
+
+.loginbut, .createbut{
+    margin-left: auto;
+    margin-right: auto;
+    width: 5rem;
+    display: block;
+}
+
+.createbut{
+    width: 12rem;
+}
+
+.cred, .username{
+    display: none;
+    text-align: center;
+}
