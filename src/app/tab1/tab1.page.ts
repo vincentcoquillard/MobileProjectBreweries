@@ -43,6 +43,10 @@ export class Tab1Page {
   }
 
   constructor(private http: HttpClient, private modalController: ModalController, private storage: Storage) {
+    
+    storage.get('Connected').then((val) => {
+      console.log(val);
+    });
     storage.get('Connected').then((val) => {
       if(val == 'YES'){
         document.getElementById('notConnected').style.display = 'none';
